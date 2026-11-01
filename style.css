@@ -1,0 +1,1380 @@
+* {
+    box-sizing: border-box;
+}
+
+
+:root {
+
+    --blue: #2563eb;
+
+    --blue-dark: #1d4ed8;
+
+    --green: #16a34a;
+
+    --orange: #ea580c;
+
+    --purple: #7c3aed;
+
+    --red: #dc2626;
+
+    --background: #f3f4f6;
+
+    --white: #ffffff;
+
+    --text: #1f2937;
+
+    --muted: #6b7280;
+
+    --border: #e5e7eb;
+
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        var(--background);
+
+    color:
+        var(--text);
+
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.topbar {
+
+    background:
+        var(--blue);
+
+    color:
+        white;
+
+    padding:
+        16px 20px;
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+}
+
+
+.brand {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        12px;
+
+}
+
+
+.brand-icon {
+
+    width:
+        48px;
+
+    height:
+        48px;
+
+    background:
+        rgba(255,255,255,0.2);
+
+    border-radius:
+        12px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    font-size:
+        25px;
+
+}
+
+
+.topbar h1 {
+
+    margin:
+        0;
+
+    font-size:
+        23px;
+
+}
+
+
+.topbar p {
+
+    margin:
+        4px 0 0;
+
+    opacity:
+        0.9;
+
+    font-size:
+        13px;
+
+}
+
+
+.install-btn {
+
+    background:
+        white;
+
+    color:
+        var(--blue);
+
+    border:
+        none;
+
+    border-radius:
+        8px;
+
+    padding:
+        10px 15px;
+
+    font-weight:
+        bold;
+
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.tabs {
+
+    background:
+        white;
+
+    display:
+        flex;
+
+    overflow-x:
+        auto;
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+
+.tab {
+
+    border:
+        none;
+
+    background:
+        white;
+
+    padding:
+        15px 18px;
+
+    cursor:
+        pointer;
+
+    font-size:
+        14px;
+
+    white-space:
+        nowrap;
+
+    color:
+        #374151;
+
+}
+
+
+.tab:hover {
+
+    background:
+        #eff6ff;
+
+}
+
+
+.tab.active {
+
+    color:
+        var(--blue);
+
+    border-bottom:
+        3px solid var(--blue);
+
+    font-weight:
+        bold;
+
+}
+
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+main {
+
+    max-width:
+        1100px;
+
+    margin:
+        auto;
+
+    padding:
+        20px;
+
+}
+
+
+.page {
+
+    display:
+        none;
+
+}
+
+
+.page.active {
+
+    display:
+        block;
+
+}
+
+
+.page-title {
+
+    margin-bottom:
+        20px;
+
+}
+
+
+.page-title h2 {
+
+    margin:
+        0 0 5px;
+
+}
+
+
+.page-title p {
+
+    margin:
+        0;
+
+    color:
+        var(--muted);
+
+}
+
+
+/* =====================================================
+   WELCOME
+===================================================== */
+
+.welcome {
+
+    background:
+        white;
+
+    border-radius:
+        15px;
+
+    padding:
+        20px;
+
+    margin-bottom:
+        20px;
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+    box-shadow:
+        0 2px 8px
+        rgba(0,0,0,0.05);
+
+}
+
+
+.welcome h2 {
+
+    margin:
+        0 0 5px;
+
+}
+
+
+.welcome p {
+
+    margin:
+        0;
+
+    color:
+        var(--muted);
+
+}
+
+
+.big-add-button {
+
+    background:
+        var(--blue);
+
+    color:
+        white;
+
+    border:
+        none;
+
+    padding:
+        14px 20px;
+
+    border-radius:
+        10px;
+
+    font-size:
+        15px;
+
+    font-weight:
+        bold;
+
+}
+
+
+/* =====================================================
+   CARDS
+===================================================== */
+
+.cards {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap:
+        15px;
+
+    margin-bottom:
+        20px;
+
+}
+
+
+.card {
+
+    color:
+        white;
+
+    padding:
+        20px;
+
+    border-radius:
+        14px;
+
+    box-shadow:
+        0 3px 10px
+        rgba(0,0,0,0.08);
+
+}
+
+
+.card span {
+
+    display:
+        block;
+
+    font-size:
+        13px;
+
+    margin-bottom:
+        10px;
+
+}
+
+
+.card strong {
+
+    font-size:
+        23px;
+
+}
+
+
+.blue {
+
+    background:
+        var(--blue);
+
+}
+
+
+.green {
+
+    background:
+        var(--green);
+
+}
+
+
+.orange {
+
+    background:
+        var(--orange);
+
+}
+
+
+.purple {
+
+    background:
+        var(--purple);
+
+}
+
+
+/* =====================================================
+   QUICK ACTIONS
+===================================================== */
+
+.quick-actions {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap:
+        12px;
+
+    margin-bottom:
+        20px;
+
+}
+
+
+.quick-actions button {
+
+    background:
+        white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        12px;
+
+    padding:
+        16px;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    align-items:
+        center;
+
+    gap:
+        8px;
+
+    font-size:
+        25px;
+
+    cursor:
+        pointer;
+
+}
+
+
+.quick-actions span {
+
+    font-size:
+        13px;
+
+    font-weight:
+        bold;
+
+}
+
+
+.quick-actions button:hover {
+
+    border-color:
+        var(--blue);
+
+    background:
+        #eff6ff;
+
+}
+
+
+/* =====================================================
+   SECTION BOX
+===================================================== */
+
+.section-box {
+
+    background:
+        white;
+
+    padding:
+        20px;
+
+    border-radius:
+        14px;
+
+    margin-bottom:
+        20px;
+
+    box-shadow:
+        0 2px 8px
+        rgba(0,0,0,0.05);
+
+}
+
+
+.section-header {
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+    gap:
+        10px;
+
+    margin-bottom:
+        15px;
+
+}
+
+
+.section-header h3 {
+
+    margin:
+        0;
+
+}
+
+
+.muted {
+
+    color:
+        var(--muted);
+
+    font-size:
+        13px;
+
+}
+
+
+/* =====================================================
+   FORMS
+===================================================== */
+
+.form-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap:
+        16px;
+
+}
+
+
+.form-group {
+
+    margin-bottom:
+        15px;
+
+}
+
+
+label {
+
+    display:
+        block;
+
+    font-weight:
+        bold;
+
+    margin-bottom:
+        7px;
+
+    font-size:
+        14px;
+
+}
+
+
+input,
+select,
+textarea {
+
+    width:
+        100%;
+
+    padding:
+        12px;
+
+    border:
+        1px solid #d1d5db;
+
+    border-radius:
+        8px;
+
+    font-size:
+        15px;
+
+    background:
+        white;
+
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    outline:
+        none;
+
+    border-color:
+        var(--blue);
+
+    box-shadow:
+        0 0 0 2px
+        rgba(37,99,235,0.1);
+
+}
+
+
+textarea {
+
+    min-height:
+        90px;
+
+    resize:
+        vertical;
+
+}
+
+
+.form-buttons {
+
+    display:
+        flex;
+
+    gap:
+        10px;
+
+    flex-wrap:
+        wrap;
+
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+button {
+
+    border-radius:
+        8px;
+
+    padding:
+        10px 15px;
+
+    cursor:
+        pointer;
+
+    font-size:
+        14px;
+
+}
+
+
+.primary {
+
+    background:
+        var(--blue);
+
+    color:
+        white;
+
+    border:
+        none;
+
+}
+
+
+.primary:hover {
+
+    background:
+        var(--blue-dark);
+
+}
+
+
+.secondary {
+
+    background:
+        #e5e7eb;
+
+    color:
+        #111827;
+
+    border:
+        none;
+
+}
+
+
+.danger {
+
+    background:
+        var(--red);
+
+    color:
+        white;
+
+    border:
+        none;
+
+}
+
+
+.large-button {
+
+    padding:
+        13px 20px;
+
+    font-weight:
+        bold;
+
+}
+
+
+/* =====================================================
+   PURCHASE / PRODUCT ROWS
+===================================================== */
+
+.purchase-row,
+.product-row,
+.report-row {
+
+    border-bottom:
+        1px solid var(--border);
+
+    padding:
+        14px 0;
+
+}
+
+
+.purchase-row:last-child,
+.product-row:last-child,
+.report-row:last-child {
+
+    border-bottom:
+        none;
+
+}
+
+
+.row-main {
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+    gap:
+        15px;
+
+}
+
+
+.row-title {
+
+    font-weight:
+        bold;
+
+    font-size:
+        15px;
+
+}
+
+
+.row-details {
+
+    color:
+        var(--muted);
+
+    font-size:
+        13px;
+
+    margin-top:
+        5px;
+
+}
+
+
+.row-actions {
+
+    display:
+        flex;
+
+    gap:
+        6px;
+
+}
+
+
+.small-btn {
+
+    padding:
+        7px 10px;
+
+    border:
+        none;
+
+    font-size:
+        12px;
+
+}
+
+
+.edit-btn {
+
+    background:
+        #dbeafe;
+
+    color:
+        #1d4ed8;
+
+}
+
+
+.delete-btn {
+
+    background:
+        #fee2e2;
+
+    color:
+        #b91c1c;
+
+}
+
+
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.empty {
+
+    color:
+        var(--muted);
+
+    text-align:
+        center;
+
+    padding:
+        35px 10px;
+
+}
+
+
+/* =====================================================
+   HISTORY
+===================================================== */
+
+.history-controls {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        250px 1fr;
+
+    gap:
+        15px;
+
+    margin-bottom:
+        20px;
+
+}
+
+
+.bill-actions {
+
+    display:
+        flex;
+
+    gap:
+        10px;
+
+    flex-wrap:
+        wrap;
+
+    margin:
+        15px 0;
+
+}
+
+
+.small-summary {
+
+    background:
+        #eff6ff;
+
+    padding:
+        12px;
+
+    border-radius:
+        8px;
+
+    margin-bottom:
+        10px;
+
+    font-weight:
+        bold;
+
+    color:
+        #1e40af;
+
+}
+
+
+/* =====================================================
+   REPORTS
+===================================================== */
+
+.report-controls {
+
+    max-width:
+        300px;
+
+    margin-bottom:
+        20px;
+
+}
+
+
+.monthly-total {
+
+    background:
+        #eff6ff;
+
+    padding:
+        20px;
+
+    border-radius:
+        12px;
+
+    margin-bottom:
+        20px;
+
+}
+
+
+.monthly-total span {
+
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    margin-bottom:
+        8px;
+
+}
+
+
+.monthly-total strong {
+
+    font-size:
+        30px;
+
+    color:
+        var(--blue);
+
+}
+
+
+.report-section {
+
+    margin-top:
+        30px;
+
+}
+
+
+.report-section h3 {
+
+    border-bottom:
+        1px solid var(--border);
+
+    padding-bottom:
+        10px;
+
+}
+
+
+.report-row {
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+}
+
+
+/* =====================================================
+   BACKUP
+===================================================== */
+
+.backup-icon {
+
+    font-size:
+        35px;
+
+    margin-bottom:
+        10px;
+
+}
+
+
+.danger-box {
+
+    border:
+        1px solid #fecaca;
+
+    background:
+        #fffafa;
+
+}
+
+
+/* =====================================================
+   TOAST
+===================================================== */
+
+#toast {
+
+    position:
+        fixed;
+
+    bottom:
+        25px;
+
+    left:
+        50%;
+
+    transform:
+        translateX(-50%);
+
+    background:
+        #111827;
+
+    color:
+        white;
+
+    padding:
+        13px 20px;
+
+    border-radius:
+        10px;
+
+    display:
+        none;
+
+    z-index:
+        9999;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,0.2);
+
+}
+
+
+/* =====================================================
+   HIDDEN
+===================================================== */
+
+.hidden {
+
+    display:
+        none !important;
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .cards {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .form-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .quick-actions {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .topbar {
+
+        padding:
+            12px;
+
+    }
+
+
+    .brand-icon {
+
+        width:
+            40px;
+
+        height:
+            40px;
+
+        font-size:
+            20px;
+
+    }
+
+
+    .topbar h1 {
+
+        font-size:
+            18px;
+
+    }
+
+
+    .topbar p {
+
+        font-size:
+            11px;
+
+    }
+
+
+    .install-btn {
+
+        padding:
+            8px;
+
+        font-size:
+            12px;
+
+    }
+
+
+    main {
+
+        padding:
+            12px;
+
+    }
+
+
+    .welcome {
+
+        flex-direction:
+            column;
+
+        align-items:
+            stretch;
+
+        gap:
+            15px;
+
+    }
+
+
+    .big-add-button {
+
+        width:
+            100%;
+
+    }
+
+
+    .cards {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap:
+            10px;
+
+    }
+
+
+    .card {
+
+        padding:
+            15px;
+
+    }
+
+
+    .card strong {
+
+        font-size:
+            18px;
+
+    }
+
+
+    .form-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .history-controls {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .section-header {
+
+        align-items:
+            flex-start;
+
+        flex-direction:
+            column;
+
+    }
+
+
+    .row-main {
+
+        align-items:
+            flex-start;
+
+        flex-direction:
+            column;
+
+    }
+
+
+    .row-actions {
+
+        width:
+            100%;
+
+    }
+
+
+    .row-actions button {
+
+        flex:
+            1;
+
+    }
+
+
+    .bill-actions button {
+
+        width:
+            100%;
+
+    }
+
+
+    .quick-actions button {
+
+        padding:
+            13px;
+
+    }
+
+}
